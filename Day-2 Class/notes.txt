@@ -159,3 +159,15 @@ List In HTML :
 
         4. Nested List 
             ->
+
+
+tables in HTML : 
+----------------
+        ->Collection of rows and columns or Collection of cells is called as tables
+
+        Attributes In table 
+            1. border
+            2. cellpadding 
+            3. cellspacing
+            4. align
+            5. bgcolor
