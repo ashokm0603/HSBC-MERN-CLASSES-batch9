@@ -1,0 +1,78 @@
+Web Applications: 
+------------------
+    1. Static Web Applications 
+        ->Any Web Applications doesn't have functionality that Applications we called as a Static web Applications
+        ->To build Static web Applications we need HTML & CSS 
+
+
+
+
+    2. Dynamic Web Applications
+
+        ->Any Web Applications  having functionality that Applications we called as a Dynamic web Applications
+        ->To build Dynamic web Applications we need HTML , CSS and Javascript 
+
+web page : 
+-----------
+    ->HTML document is called as a web page 
+
+
+web site : 
+------------
+
+    ->Collection web pages we called as a web site 
+
+web server : 
+-------------
+    ->Collection of web sites are called as a web server
+
+
+HTML: 
+-----
+    ->HTML is used to build the structure of the web page 
+    ->HTML (hyper text markup language )
+    ->HTML standard markup language 
+    ->HTML will container Series ELEMENTS 
+    ->present version of HTML is the "HTML 5" 
+
+HTML Boiler Plate / HTML structure: 
+------------------------------------
+
+
+HTML Tags : 
+-------------
+    ->Tags are the predefine work which are enclose with opening and closing angular brackets
+    ->Ex:  <head> </head> , <body> </body>..etc
+
+    Types Of Tags : 
+    -----------------
+        1. Paired Tags 
+            ->Any tags having both opening and closing tags 
+            ->Ex: <body></body>
+                1. Heading tags 
+                             <h1>  </h1>
+                             <h2>  </h2>
+                             <h3>  </h3>
+                             <h4>  </h4>
+                             <h5>  </h5>
+                             <h6>  </h6>
+
+
+                2. formatting tags : 
+                --------------------- 
+                            1. <b> </b>              ->bold 
+                            2. <strong> </strong>    ->bold 
+                            3. <i> </i>              ->italic 
+                            4. <em> </em>              ->italic 
+                            5. <mark> </mark>           ->highlight the text 
+                            6. <sub> </sub>
+                            7. <sup> </sup>
+                            8. <center> </center>
+                            9. <strike> </strike>
+                            10. <u> </u>
+
+
+
+
+
+      
