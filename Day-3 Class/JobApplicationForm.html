@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>IBM JOB APPLICATION</legend>
+        <h2 align="center">Job Application Form</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" minlength="3" maxlength="8" required id="fname" placeholder="Enter First Name" />
+        <br />
+        <br />
+
+        <label for="">Last Name :</label>
+        <input type="text" placeholder="Enter Last name" />
+        <br />
+        <br />
+
+        <label for=""> Email :</label>
+        <input type="email" placeholder="user@gmail.com" />
+
+
+        <br><br>
+        <label for="">Phone No:</label>
+        <select>
+            <option value="">+91</option>
+            <option value="">+92</option>
+            <option value="">+93</option>
+            <option value="">+94</option>
+            <option value="">+95</option>
+            <option value="">+96</option>
+            <option value="">+96</option>
+            <option value="">+213</option>
+        </select>
+        <input type="tel" placeholder="Phone Number." pattern="[6-9]{1}[0-9]{9}" >
+
+        <br /><br />
+        <label for=""> Age :</label>
+        <input type="number" min="20" max="35" placeholder="+20" />
+
+        <br /><br />
+        <label for="">Date Of Birth:</label>
+        <input type="date" /> <br /><br />
+
+        <label for=""> Gender :</label>
+        <input type="radio" name="gender" /> Male
+        <input type="radio" name="gender" /> Female
+
+        <br /><br />
+
+        <label for="">Skills: </label>
+        <input type="checkbox" /> Next JS <input type="checkbox" /> Python
+        <input type="checkbox" /> SAP UI5 <input type="checkbox" /> Ruby
+
+        <br /><br />
+        <label for="">Languages :</label>
+        <input type="range" value="100" /> English
+        <input type="range" /> Kannada <input type="range" /> Telugu
+
+        <br /><br />
+
+        <label for="">City: </label>
+        <select>
+          <option value="">--Choose City--</option>
+          <option value="hyderabad">hyderabad</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Kochi">Kochi</option>
+          <option value="Chennai">Chennai</option>
+        </select>
+        <br /><br />
+
+        <label for="">Address :</label>
+        <textarea name="" id=""></textarea>
+        <br /><br />
+
+        <label for="">Upload Resume :</label>
+        <input type="file" />
+        <br /><br />
+        <label for="">Linkedin URL:</label>
+        <input type="url" />
+        <br /><br />
+        <input type="submit" />
+        <input type="reset">
+      </fieldset>
+    </form>
+  </body>
+</html>
