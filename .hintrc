@@ -27,6 +27,15 @@
       {
         "frame-title": "off"
       }
+    ],
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-backdrop-filter"
+        ]
+      }
     ]
   }
 }

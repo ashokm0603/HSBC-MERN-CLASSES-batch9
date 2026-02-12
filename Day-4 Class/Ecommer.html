@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Mark</title>
+    <link
+      rel="icon"
+      href="https://simicart.com/wp-content/uploads/eCommerce-logo.jpg"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+          background-color: gray;
+
+      }
+      nav {
+        background-image: linear-gradient(45deg, blue, lightblue);
+      }
+
+      nav > ol {
+        background-image: linear-gradient(45deg, blue, lightblue);
+        height: 90px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      nav > ol > li {
+        background-color: palevioletred;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+      a {
+        text-decoration-line: none;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+      }
+      #welcome-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+      }
+      #welcome-container h1::first-letter {
+        font-size: 50px;
+        font-style: italic;
+      }
+      #welcome-container h1 {
+        text-shadow: 5px 5px 5px aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Login</a>
+        </li>
+        <li>
+          <a href="">Register</a>
+        </li>
+        <li>
+          <a href="">View Products</a>
+        </li>
+        <li>
+          <a href="">Cart</a>
+        </li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="welcome-container">
+        <h1>Welcome to Alpha Mark</h1>
+      </section>
+    </main>
+  </body>
+</html>

@@ -3,22 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modern Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            padding: 20px;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 380px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            backdrop-filter: blur(12px);
+            padding: 28px;
+            color: #ffffff;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .login-card h1 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .login-card p {
+            color: #dbeafe;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            padding: 11px 12px;
+            border-radius: 10px;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        input::placeholder {
+            color: #e2e8f0;
+        }
+
+        input:focus {
+            border-color: #93c5fd;
+            box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.28);
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        button {
+            flex: 1;
+            border: none;
+            border-radius: 10px;
+            padding: 11px 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+
+        .btn-login {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .btn-reset {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            opacity: 0.95;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <fieldset>
-            <legend>Login Form</legend>
-            <label for="uname">UserName:</label>
-            <input type="text" id="uname" placeholder="Enter UserName" >
+    <form class="login-card">
+        <h1>Welcome Back</h1>
+        <p>Sign in to continue to your account</p>
 
-            <br><br>
-            <label for="password">Password:</label>
-            <input type="password" placeholder="Enter Password"> 
-            <br><br>
-            <button type="submit">Login</button>
-            <button type="reset">Reset</button>
-        </fieldset>
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" id="uname" placeholder="Enter username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="actions">
+            <button class="btn-login" type="submit">Login</button>
+            <button class="btn-reset" type="reset">Reset</button>
+        </div>
     </form>
 </body>
 </html>

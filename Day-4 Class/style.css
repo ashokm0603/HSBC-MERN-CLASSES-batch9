@@ -1,0 +1,14 @@
+
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+tr:nth-child(odd){
+        background-color: gray;
+}
+tr:first-child{
+    font-weight: bold;
+    background-color: brown;
+    color: aliceblue;
+}

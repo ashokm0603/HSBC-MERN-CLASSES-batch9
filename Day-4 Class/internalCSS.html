@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style: none;
+            padding: 30px;
+            background-color: aquamarine;
+        }
+        li{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+        fieldset{
+            border-radius:10px 50px;
+            padding: 30px;
+            margin: 50px;
+            background-image: radial-gradient(blue,powderblue, goldenrod );
+        }
+        label{
+            text-shadow: 2px 2px 2px black;
+            color: azure;
+            font-style: italic;
+            font-weight: bold;
+        }
+        button{
+            background-color: peru;
+            padding: 8px 20px;
+            font-weight: bold;
+            font-family: monospace;
+            border-radius: 10px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: transparent;
+            background-image: linear-gradient(red, white, green);
+            -webkit-backdrop-filter: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>List-1</li>
+        <li>List-2</li>
+        <li>List-3</li>
+        <li>List-4</li>
+        <li>List-5</li>
+    </ol>
+
+
+    <h1>Login Form</h1>
+    <form action="">
+        <fieldset>
+            <label for="">UserName :</label>
+            <input type="text" placeholder="Enter Username"> <br><br>
+            <label for="">Password :</label>
+            <input type="password" placeholder="Enter Username"> <br><br>
+            <button type="submit">Login</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+</body>
+</html>
