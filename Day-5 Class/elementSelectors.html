@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1::after {
+        color: red;
+        content: " Every One ";
+      }
+
+      h1::before {
+        content: "Hi ";
+        color: green;
+      }
+      h1::first-letter,
+      p::first-letter {
+        color: magenta;
+        font-size: 50px;
+        font-style: italic;
+      }
+
+      h2 {
+        text-align: center;
+        color: magenta;
+        font-style: italic;
+        font-size: 20px;
+      }
+      h2::first-letter {
+        font-size: 40px;
+        color: purple;
+        font-style: italic;
+        text-shadow: 5px 5px 5px;
+      }
+
+      label {
+        font-weight: bold;
+        font-style: italic;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      label:last-of-type:after {
+        color: red;
+        content: "*🔏";
+      }
+      label:first-of-type:after {
+        color: red;
+        content: "*🙎🏻";
+      }
+
+      p::first-line{
+        background-color: cadetblue;
+        
+      }
+
+      li::marker{
+        content: "👉";
+      }
+
+      p::selection{
+        background-color: magenta;
+        color: brown;
+      }
+
+      li::selection{
+        background-color: black;
+        color: white;
+      }
+
+      input::placeholder{
+        color: red;
+        padding: 10px;
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <h1>Hello</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quia, error
+      culpa nesciunt suscipit consequuntur earum fugiat eum perferendis tenetur
+      a porro. Soluta officiis sunt corrupti labore, at minima deserunt!
+    </p>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>React JS</li>
+        <li>JS</li>
+    </ol>
+
+    <form action="">
+      <fieldset>
+        <h2>Sign-In</h2>
+        <label for="">UserName :</label>
+        <input type="text" placeholder="Enter Username " />
+        <br /><br />
+        <label for="">Password :</label>
+        <input type="password" placeholder="Enter password " />
+        <br /><br />
+        <button type="submit">Sign-IN</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
