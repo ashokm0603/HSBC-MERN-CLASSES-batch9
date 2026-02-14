@@ -1,0 +1,114 @@
+Attribute selectors : 
+------------------------
+     1. [AttributeName ="value"] -> 
+     2. [AttributeName |="value"] -> if Attribute value contains Ex: for="user-name"
+
+        [for|="user"]
+
+
+
+Text Properties: 
+--------------------
+        1. text coloring 
+                i. color 
+                ii . text-shadow
+
+        2. text alignments 
+            i. text-align : left , right , center , justify
+            ii. word-spacing 
+            iii. letter-spacing 
+            iv. line-height
+            v.  text-indent
+
+
+        3. text decoration Properties 
+            i. text-decoration-line:line-through , underline , overline
+            ii. text-decoration-style :solid , wavy , dotted , double , dashed
+            iii.text-decoration-color:
+            iv. text-decoration-thickness
+            v.  text-decoration(short hand form)
+
+
+        4. text transform Properties 
+                i.text-transform : uppercase , lowercase , capitalized
+        5. text overflow 
+                i. overflow : auto , visible , scroll , hidden
+
+
+        6. font Properties 
+            i. font-size 
+            ii. font-weight
+            iii. font-style 
+            iv. font-family 
+
+
+    CSS Box Model: 
+    -------------
+
+        1. content 
+        2. padding 👍
+                ->Spacing content and border is called padding
+                i. padding-top
+                ii. padding-left 
+                iii. padding-bottom 
+                iv .padding-right 
+                v. padding
+
+
+
+        3. border   : 
+            ->The space between padding and margin
+                i. border-style :solid , dotted , dashed , double 
+                ii.border-width 
+                iii.border-color
+
+
+
+            border with different side: 
+            ---------------------------
+            i. border-top 
+            ii.border-bottom
+            iii.border-left
+            iv. border-right
+            v. border
+
+            border- radius Properties 
+            ----------------------------
+                i.  border-top-left-radius
+                ii.  border-top-right-radius
+                iii.  border-bottom-left-radius
+                iv.  border-bottom-right-radius
+                v. border-radius
+
+
+                box-shadow: x-axis y-axis alpha colorValue
+              
+
+
+
+
+        4. margin
+            ->space between border and outline 
+                i. margin-top
+                ii. margin-left 
+                iii. margin-bottom 
+                iv .margin-right 
+                v. margin
+
+
+     Display Properties :
+            ->this need to used display items in screen 
+                -> use in parent-tags
+
+
+            i . display: none , block , flex , grid , inline-block 
+
+
+            Flex Properties : 
+            ------------------
+                i.  display:flex 
+                ii. justify-content :start , end , center , left , right , space-evenly , space-around , space-between
+                iii. align-items :start , end , center 
+                iii. flex 
+                iv. flex-warp :no-warp , warp , warp-reverse
+                v.flex-direction: row , column , row-reverse ,column-reverse

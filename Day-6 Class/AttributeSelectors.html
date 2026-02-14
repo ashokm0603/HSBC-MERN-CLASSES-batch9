@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[alt="image1"]{
+            height: 100px;
+            width: 200px;
+            border-radius: 50px;
+        }
+        input[type="password"]{
+            width: 500px;
+            height: 25px;
+        }
+        label[for|="user"]{
+            color: red;
+            font-weight: bold;
+        }
+
+        input[placeholder*='d']{
+            background-color: purple;
+        }
+
+        label[for^="user"]{
+            font-weight: bold;
+            font-style: italic;
+            background-color: paleturquoise;
+        }
+        label[for~="password"]{
+                background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+
+
+    <form action="">
+        <fieldset>
+            <h1>Sign-Up</h1>
+            <label for="user-name">Name :</label>
+            <input type="text" placeholder="Enter Name" name="" id="">
+            <br><br>
+            <label for="user email">Email :</label>
+            <input type="email" placeholder="Enter email" name="" id="">
+            <br><br>
+            <label for="person dob">DOB :</label>
+            <input type="date" placeholder="Enter date" name="" id="">
+            <br><br>
+            <label for="person password example">Password :</label>
+            <input type="password" placeholder="Enter password" name="" id="">
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-vivid-abstract-texture-a-burst-of-colorful-background-image_13892083.png" alt="image1">
+    <img src="https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-2.jpg" alt="image2">
+</body>
+</html>
