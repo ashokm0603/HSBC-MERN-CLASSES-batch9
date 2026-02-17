@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: antiquewhite;
+        padding: 20px;
+      }
+
+      nav > ol {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+      }
+      li {
+        background-color: aqua;
+        padding: 10px 20px;
+      }
+
+      /* mobile responsiveness */
+
+      @media screen and (max-width: 360px) {
+        nav {
+          background-color: burlywood;
+        }
+        ol {
+          display: flex;
+          flex-direction: column;
+        }
+        li {
+          margin: 10px;
+          background-color: gold;
+        }
+      }
+
+      /* tablet view port  */
+
+      @media screen and (min-width:360px) and (max-width:500px) {
+        nav{
+            background-color: gray;
+        }
+        ol{
+            flex-wrap: wrap;
+        }
+        li{
+            background-color: black;
+            color: aliceblue;
+            font-weight: bold;
+            font-style: italic;
+            margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li>Home</li>
+        <li>Login</li>
+        <li>Register</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Help</li>
+      </ol>
+    </nav>
+  </body>
+</html>

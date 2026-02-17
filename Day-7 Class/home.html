@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        height: 100vh;
+        background-image: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+      }
+      nav>ol {
+        padding: 20px 0px;
+        background-color: palegreen;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+      nav>ol>li {
+        text-align: center;
+        background-color: blue;
+        color: aliceblue;
+        padding: 8px 20px;
+        margin: 5px;
+        flex-grow: 1;
+        border-radius: 10px;
+        font-style: italic;
+        font-weight: bold;
+        box-shadow: 5px 5px 5px black;
+      }
+
+    a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+      section>div{
+        margin: 20px;
+        background-color: gray;
+        padding: 20px;
+        border-radius: 20px;
+      }
+       section>div>img{
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px aliceblue;
+    }
+    
+    
+    section>div>p{
+           display: flex;
+           flex-direction: column;
+       }
+       p>span{
+        font-weight: bold;
+        font-style: italic;
+
+       }
+       button{
+        padding: 5px 10px;
+        font-weight: bold;
+        font-family: monospace;
+       }
+
+       #product-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+       }
+
+
+       ul{
+        list-style: none;
+        padding: 20px;
+        background-color: plum;
+        margin: 30px 0px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 10px;
+        column-gap: 20px;
+       }
+       ul>li{
+        text-align: center;
+        background-color: gold;
+       }
+
+       ul>li:nth-child(1){
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+       }
+
+       ul>li:nth-child(8){
+        grid-column-start: 3;
+        grid-column-end: 5;
+       }
+
+
+
+       ol>li:hover{
+        cursor: pointer;
+        transform: scaleY(1.1);
+       }
+
+       img:hover{
+        transform: skew(20deg);
+       }
+
+
+        section>h1{
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 5px 5px aliceblue;
+            animation-name: textBlow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        
+        @keyframes textBlow {
+            from{
+                transform: scale(0);
+            text-shadow: 15px 15px 5px rgb(93, 226, 72);
+            
+        }to{
+            text-shadow: 5px 5px 5px rgb(226, 72, 223);
+
+        }
+       }
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li>Home</li>
+        <li>Login</li>
+        <li>Register</li>
+        <li>view</li>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+        <li>Cart</li>
+      </ol>
+    </nav>
+
+
+
+    <ul>
+        <li>items-1</li>
+        <li>items-2</li>
+        <li>items-3</li>
+        <li>items-4</li>
+        <li>items-5</li>
+        <li>items-6</li>
+        <li>items-7</li>
+        <li>items-8</li>
+        <li>items-9</li>
+        <li>items-10</li>
+    </ul>
+
+
+
+    <hr>
+    
+
+    <main>
+      <section>
+        <h1>Welcome to My Page</h1>
+      </section>
+
+      <section id="product-container">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoiUEpRMTKnIxdFn5_G55FK9lm3sSHopBzw&s" alt="laptop">
+            <p>
+                <span>Name : Laptop</span>
+                <span>Price :50000</span>
+                <span>Ratings :⭐⭐⭐⭐</span>
+                <div>
+                    <button>Read more</button>
+                    <button>add cart</button>
+                </div>
+            </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
