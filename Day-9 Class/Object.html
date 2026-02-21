@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let EmpDetails = {
+        name: "ravi",
+        salary: 850225,
+        address: "bangalore",
+      };
+
+      console.log(EmpDetails.name);
+
+      console.log(EmpDetails);
+
+      let obj1 = new Object({
+        stdName: "sai",
+        course: "MERN",
+      });
+      console.log(obj1);
+      console.log(obj1.stdName);
+      console.log(obj1.course);
+
+      let sampleObj = {
+        name: "raju",
+        age: 25,
+        active: true,
+        skills: ["Node js", "React Js ", "Express JS"],
+        fun: () => {
+          console.log("Hello");
+        },
+        color: {
+          color1: "red",
+          color2: "green",
+        },
+      };
+
+      sampleObj.address = "Hyderabad";
+
+      sampleObj.active = false;
+
+      delete sampleObj.active
+      delete sampleObj.age
+      delete sampleObj.color
+      console.log(sampleObj);
+
+      
+
+    //   console.log(sampleObj.name);
+    //   console.log(sampleObj.age);
+    //   console.log(sampleObj.active);
+    //   console.log(sampleObj.skills[0]);
+
+
+
+    let productDetails={
+        name:"Laptop",
+        cost:50000,
+        ratings:"⭐⭐⭐⭐",
+        description:"Good Condition......"
+    }
+
+    console.log(Object.keys(productDetails));
+    console.log(Object.values(productDetails));
+    console.log(Object.entries(productDetails));
+
+
+    Object.seal(productDetails)
+
+    console.log(Object.isSealed(productDetails));
+    
+
+    productDetails.name="Mobile"
+    productDetails.discount=1500
+    delete productDetails.name
+    console.log(productDetails);
+    
+    </script>
+  </body>
+</html>

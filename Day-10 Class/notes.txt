@@ -1,0 +1,137 @@
+ Functions : 
+ ----------
+    ->functions are block of statements which it is called 
+
+
+    function funName(){
+
+    }
+
+    funName()
+    
+
+    Majorly two Types of Functions : 
+    ---------------------------------
+        1. predefine Functions 
+        2. user define functions 
+
+
+        10 types of Functions : 
+        ------------------------
+        1. anonyms function 
+        2. named function / normal function 
+        3. functional expression 
+        4. first class function 
+        5. Immediate invoking function / self calling function 
+        6. arrow Function (ES 6)
+        7. nested function 
+        8. higher order function 
+        9. callback function 
+        10. generator function
+
+
+
+
+Objects : 
+--------
+    ->Objects  are the real time entities used to store data in the form of key-value pair 
+    ->Object declaration 
+            1. literal way 
+                let obj ={
+                    name:"ravi",
+                    salary:850225
+                }
+
+            2. new keyword 
+
+                let obj1=new Object({
+                    stdName:"sai",
+                    course:"MERN"
+                })
+
+
+
+        inbuilt Functions in Objects : 
+        -------------------------------
+            1. Object.keys()
+            2. Object.values()
+            3. Object.entries()
+            4. Object.seal()
+                    ->we can update values , can't do insert we key values , also not possible deletion
+
+
+            5. Object.freeze()
+                 ->we can not  update values, insert we key values , deletion not possible
+
+            6. Object.isSealed()
+            7. Object.isFrozen()  
+
+
+JSON:
+-----
+    ->Javascript object notation 
+    ->JSON similar to javascript object
+
+
+
+
+BOM(browser object model)
+-------------------------
+    ->Bom is the predefine object present in every browsers
+
+
+
+Windows  ; 
+------------
+
+        output methods : 
+        -----------------
+            1. console.log()
+            2. console.error()
+            3. console.warn()
+            4. console.info()
+            5. console.table() 
+
+
+            6. document.write()
+            7. document.writeln()
+
+             dialog box's : 
+             --------------
+             1. alert() 
+             2. conform () 
+
+
+
+Storages : 
+----------
+ 1 . local storage 
+    ->local storage is permanent storage data will be not delete until user deleted manually 
+    ->In local storage data stored in the form of key-value pair 
+
+    localStorage.setItem()
+    localStorage.getItem()
+
+
+ 2. session storage 
+
+
+
+DOM (Document Object model) :
+---------------------------
+
+    ->DOM is used to build dynamic web pages 
+    ->using DOM we can manipulate HTML and CSS structure 
+    ->using DOM we can functionality to web pages  
+
+
+
+Dom Methods 
+
+
+Dom Events : 
+-----------
+   We can apply events in 3 ways 
+    1. Attribute way 
+    2. property way 
+    3. addEventListener()

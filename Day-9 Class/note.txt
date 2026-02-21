@@ -1,0 +1,234 @@
+Responsive Designing: 
+---------------------
+    ->Building web applications based on device view ports 
+    
+    @media screen 
+
+                1. min-width 
+                2. max-width 
+
+Javascript: 
+-----------
+
+    ->mocha ->live script ->javascript  (netscape)  -> ECMA()->new features 1996 release new version ES1(ECMA Script)
+
+        ->Javascript is the scripting language as well as programming language
+        ->1994 
+        ->latest version of JS (ES 15) 
+        ->stand version (ES 6)
+
+
+
+
+        ->using Js we can build dynamic applications
+        ->using javascript we can achieve DOM(document object model) functionalities 
+        ->using JS fetch data from server (api ) 
+
+
+        ->Js dynamically typed programming language 
+        ->Js will support only single Stack
+
+
+        
+
+        Methods To write JS code : 
+        -------------------------------
+            1. internal JS 
+                ->by writing JS code in script tags in HTML File 
+
+            2. external JS
+
+        
+
+        Tokens : 
+        --------
+            ->smallest units in programming is called tokens 
+
+            Types : 
+                1. Identifiers 
+                    ->names given to javascript code 
+                    ->Ex: variables names , class names , functions names 
+
+
+                    ->in the place Identifiers we cant' use keywords 
+
+
+
+
+
+
+                2. keywords 
+                    ->keywords are the predefine words 
+                    ->66 keywords in JS  [ java -50 , python -34 , C-32 dart-62]
+                            
+                Ex: 
+                class , break , if , else , for , while , extends , try , catch , case , switch , continue , let , var, const ...etc
+
+
+
+                3. literals 
+                    ->values given to JS code 
+                    Types 
+                        1. String literals 
+                        2. Numeric literals
+
+
+                4. operators 
+                    ->operators are the symbols used to perform operations on Operands 
+
+                    ->Ex: 10+20 
+
+                        Types : 
+                        1. Arthritic operators ( +, - ,/ , % , * , **)
+                        2. logical operators (&& , || , !) 
+                        3. relational operators (> ,< ,>=,<=)
+                        4. Assignment operators(=, += ,-= ,/= ,%= , *= ) 
+                        5. comparison operators (== ,=== , != )
+                        6. bitwise (& ,|, ^)
+                        7. shift operators (>>, <<)
+                        8. unary operators (++ ,-- )
+                        9. ternary operators (condition ? expression1 : expression2)
+
+
+
+
+                5. separators 
+                ->separators used to separate the code 
+
+                Ex: " " ,' ' ,`` , {} , [] ,() , <> ,, . , ; : 
+
+
+                6. comments
+                        ->comments are use to comment the code 
+                        1. single line comments 
+                                        //line 1
+                        2. multi line comment
+
+                                    /*
+                                            line 1
+                                            line 2
+                                              ..
+                                              ..
+                                    */
+        
+
+        DataTypes : 
+        -----------
+            ->DataTypes represent what  of data storing in variables 
+
+            1. Primitive DataTypes (immutable in nature , object de-referencing)
+                    1. sting
+                    2. number
+                    3. boolean 
+                    4. null 
+                    5. undefine 
+                    6. bigInt 
+                    7. symbol
+
+
+            2. Non Primitive DataTypes
+                1. Arrays 
+                    ->Arrays liner data structures used to store homogenous or heterogenous data 
+                    -> declare In two ways 
+                        1. literals way 
+                        2. using new keyword 
+
+
+
+                2. Objects 
+                3. Functions 
+                4. Classes 
+
+
+
+    Variables : 
+        ->variables are names memory location used to store values/ data and it can change N number of Time During Execution
+
+     let  num =10;
+            num=20;
+
+
+        1. let 
+            ->let variables asks like a block scope / local scope
+            ->can not hoist let variables
+
+            hoisting : 
+                ------
+                    ->utilizing variable 
+        2. var 
+            ->var ask global variables 
+s
+        3. const 
+                ->const variables asks like a final variable 
+                 once we assign value to the const variable we can not modify values
+
+
+
+
+ Functions : 
+ ----------
+    ->functions are block of statements which it is called 
+
+
+    function funName(){
+
+    }
+
+    funName()
+    
+
+    Majorly two Types of Functions : 
+    ---------------------------------
+        1. predefine Functions 
+        2. user define functions 
+
+
+        10 types of Functions : 
+        ------------------------
+        1. anonyms function 
+        2. named function / normal function 
+        3. functional expression 
+        4. first class function 
+        5. Immediate invoking function / self calling function 
+        6. arrow Function (ES 6)
+        7. nested function 
+        8. higher order function 
+        9. callback function 
+        10. generator function
+
+
+
+
+Objects : 
+--------
+    ->Objects  are the real time entities used to store data in the form of key-value pair 
+    ->Object declaration 
+            1. literal way 
+                let obj ={
+                    name:"ravi",
+                    salary:850225
+                }
+
+            2. new keyword 
+
+                let obj1=new Object({
+                    stdName:"sai",
+                    course:"MERN"
+                })
+
+
+
+        inbuilt Functions in Objects : 
+        -------------------------------
+            1. Object.keys()
+            2. Object.values()
+            3. Object.entries()
+            4. Object.seal()
+                    ->we can update values , can't do insert we key values , also not possible deletion
+
+
+            5. Object.freeze()
+                 ->we can not  update values, insert we key values , deletion not possible
+
+            6. Object.isSealed()
+            7. Object.isFrozen()

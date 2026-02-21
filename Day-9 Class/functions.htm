@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //anonyms function
+      // function(){
+      // }
+
+      //named function
+
+      function addition() {
+        console.log("hello");
+        console.log(10 + 20);
+      }
+
+      addition();
+      addition();
+      addition();
+
+      //normal function with parameter/ arguments
+      function sumOfNumbers(a, b) {
+        console.log(a + b);
+      }
+
+      sumOfNumbers(10, 20);
+      sumOfNumbers(50, 50);
+
+      //normal function with return type
+
+      function details() {
+        return "Name : Reddy , Role :developer , ";
+      }
+
+      result = details();
+      console.log(details());
+
+      console.log(result);
+
+      //functional expression
+      //first class function
+
+      const fun = function (m, n) {
+        console.log(m, n);
+        console.log("This is Functional Expression");
+        console.log("Also example for First class Function");
+      };
+      fun(50, 30);
+
+      console.log("------------------");
+
+      //Immediate invoking function
+
+      (function () {
+        let a = 10;
+        let b = 20;
+        console.log(a + b);
+        console.log("Addition of a and b", a + b);
+      })();
+
+      let arrow = () => console.log("THis is arrow function");
+
+      arrow();
+
+      //rule 1
+
+      let arr1 = (name, role, sal) => {
+        let a = 20;
+        console.log(name, role, sal);
+        console.log(a);
+      };
+
+      arr1("ravi", "developer", 500000);
+
+      //rule 2:
+
+      let arr3 = () => {
+        return 10;
+      };
+
+      console.log(arr3());
+
+      //   higher order function : Any functions that will accept another functions as a parameter
+
+      function homePage(register, login) {
+        console.log("This is Home page ");
+      }
+
+      function loginPage() {
+        console.log("This is Login page ");
+      }
+      function registerPage() {
+        console.log("This is Register page ");
+      }
+
+      //callback function  : any functions that will pass as a parameter to the higher order function
+
+      homePage(registerPage(), loginPage());
+
+      function* generatorFun() {
+        yield (a = 10);
+        yield (b = 20);
+        console.log("This is generator function");
+      }
+
+      const gen = generatorFun();
+
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      gen.next();
+    </script>
+  </body>
+</html>

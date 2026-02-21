@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let obj={
+            name:"sai",
+            role:"Developer",
+            salary:50000
+        }
+        //stringify() is used to covert Javascript object to String
+        console.log(JSON.stringify(obj))
+        let jsonData='{"name":"sai","role":"Developer","salary":50000}'
+
+
+        window.console.log(JSON.parse(jsonData));
+        window.console.error("this is error statement")
+        window.console.warn("this is warn statement")
+        window.console.info("this is information statement")
+
+        let arr=[10,20,30,"java"]
+
+        window.console.table(arr)
+        
+        document.write("Hi Hello Every one")
+        document.write("Hi Hello Every one")
+
+        document.writeln(window.innerHeight)
+    </script>
+</body>
+</html>
