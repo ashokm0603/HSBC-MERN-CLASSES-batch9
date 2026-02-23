@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WeatherAPI Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #weather {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Weather Fetch Example (WeatherAPI.com)</h2>
+
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button onclick="getWeather()">Get Weather</button>
+
+  <div id="weather"></div>
+
+  <script>
+    async function getWeather() {
+      const city = document.getElementById("cityInput").value || "Guntur";
+      const apiKey = "61962479962d4c0ab0a160437262102";
+      const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(city)}&aqi=no`;
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("City not found or API error");
+        }
+        const data = await response.json();
+
+        const weatherDiv = document.getElementById("weather");
+        weatherDiv.innerHTML = `
+          <h3>Weather in ${data.location.name}, ${data.location.country}</h3>
+          🌡️ <strong>Temperature:</strong> ${data.current.temp_c}°C<br>
+          ☁️ <strong>Condition:</strong> ${data.current.condition.text}<br>
+          💧 <strong>Humidity:</strong> ${data.current.humidity}%<br>
+          🌬️ <strong>Wind:</strong> ${data.current.wind_kph} kph
+        `;
+      } catch (error) {
+        document.getElementById("weather").textContent = error.message;
+      }
+    }
+  </script>
+
+</body>
+</html>

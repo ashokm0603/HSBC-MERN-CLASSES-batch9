@@ -1,0 +1,85 @@
+React JS : 
+----------
+    ->React Js is the Javascript library 
+    ->2010 ->facebook -2013 
+    ->React Js is the component based 
+    ->React JS we can build SPA (single page of Application)
+    ->React js is the Declarative in nature 
+    ->in React Js we can achieve Virtual DOM 
+
+React JS : 
+----------
+    ->Societal media Application 
+    ->E-commerce Application 
+    ->Real time web Analytics ,,etc 
+
+
+setUp React Application : 
+---------------------
+     1. CLI (command line interface)
+            i.using npm (react + vite js)
+                    ->npm create vite@latest
+
+
+
+            ii. using npx
+                    ->npx create-react-app projectName 
+
+
+     2. CDN(content delivery network) 
+
+
+React +Vite Project folder Structure : 
+--------------------------------------
+    
+
+    JSX(javascript and XML): 
+    ------------------------
+        ->react will understand only JSX code 
+        ->browsers will not understand JSX (browsers will understand javascript )
+        ->here we have next generation compiler "babel JS"
+
+
+        ->JSX code similar to HTML 
+
+            JSX                           HTML
+        ---------------             ---------------
+        ->strictly typed                   ->not strictly typed
+        ->className attribute              ->class attribute
+        ->filename starts with capital      ->not like that 
+        ->parent tags  
+        ->empty fragments 
+        ->support JS Expression  { }
+
+
+Component In React : 
+------------------------
+    ->single single UI blocks is called Component 
+    Types of Component : 
+    ----------------------
+        1. Class Based Component (CBC)
+                    ->we can Declare CBC using Class Keyword 
+                    ->CBC Render() is present 
+                    ->CBC constructor , super keyword , this keyword  is present 
+                    ->In CBC life cycles methods are present 
+                    ->In CBC states are present so CBC also called as a state full Component
+                
+        2. Function Based Component(FBC) 
+                    ->we can Declare FBC  using Function Keyword or arrow Function
+                    ->FBC Render() is not present 
+                    ->In FBC constructor , super keyword , this keyword  is not present 
+                    ->In FBC life cycles methods are not present 
+                    ->In FBC states are not present so FBC also called as a state less Component
+
+
+
+
+    state In React  : 
+    ------------------
+        ->states are used to hold data 
+        ->states are mutable 
+        ->states present only in class based component 
+        
+
+
+        react version 16.8 ->Hooks 
