@@ -1,0 +1,120 @@
+Data Stores : 
+-------------
+     1. Structure data 
+        ->Ex: sql , oracle , Postgres SQL , SQL Server ...
+
+     2. semi Structure
+        -> Ex: MongoDB , Neo4j , Cassandra , Apache HBase
+
+
+     3. unstructured
+
+NoSql : 
+-------
+    -> not only SQL 
+
+
+
+
+Database : 
+----------
+    ->Database is the place where we can store and manage data 
+    ->In MongoDB Database means place where we can store group of Collections   
+    ->To create Database in MongoDB 
+        Syntax : 
+                use DatabaseName
+
+    ->to drop Database
+            db.dropDatabase()
+
+MongoDB Atlas 
+MongoDB compass
+
+
+
+
+MongoDB: 
+---------
+    ->MongoDB Is Nosql database used to store Data in form of documents like JSON , BSON
+    ->horizontal scaling
+    ->MongoDB support flexible schema / schema less
+    ->Availability (CAP) 
+    ->2010
+
+
+
+Collection in MongoDB: 
+-----------------------
+    ->The Collections of documents is called as  a Collection in MongoDB
+    ->one Collection we store N documents 
+    ->Query To create Collection : 
+        Syntax: 
+            db.createCollection("CollectionName")
+
+
+Documents : 
+-----------
+    ->documents contains Collection of fields 
+    ->We can insert documents using 2 methods 
+        Syntax : 
+          1.  db.CollectionName.insertOne({})  ->to insert single document at a time 
+
+          2.  db.CollectionName.insertMany([{},{},{},{}...])  ->to insert one or more  documents at a time 
+
+          data types : 
+            1. string 
+            2. numbers 
+            3. boolean 
+            4. date 
+            5. time 
+            6. arrays 
+            7. objects 
+            8. function
+
+          
+
+    retrieve Documents In MongoDB : 
+    --------------------------------
+        1. find()
+            ->find() is used retrieve all documents from the Collection 
+            Syntax : 
+            db.CollectionName.find()
+
+            Filters : 
+                db.CollectionName.find({filtered data})
+            projections  : 
+                db.CollectionName.find({filter data},{projections Query})
+
+                to display fields -> 1 
+                if don't to display fields ->0
+
+        2. findOne()
+
+
+
+    Delete Document : 
+    -----------------
+        1. db.CollectionName.deleteOne({filter data})
+        2. db.CollectionName.deleteMany({filter data})
+
+
+    Update Document : 
+    ----------------
+            to update document required update operators: 
+                    1. $set 
+                    2. $unset 
+                    3. $pop
+                    4. $rename 
+                    5. $push
+                    6. $pull
+                    7. $inc
+
+
+        1. updateOne 
+            ->updateOne() is used to updateOne one document at a time 
+
+            Syntax : 
+            db.CollectionName.updateOne({filter data}, {updated Query})
+
+            db.empDetails.updateOne({name:"Teja"} ,   { $set:{name:"ravi teja"}})
+

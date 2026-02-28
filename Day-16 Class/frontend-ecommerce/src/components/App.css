@@ -1,0 +1,225 @@
+/* landing page stylings */
+nav img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px black;
+  margin-right: 10px;
+}
+
+nav h1 {
+  margin-right: 10px;
+  font-weight: bold;
+  color: transparent;
+  font-style: italic;
+  background-image: linear-gradient(red, orange);
+  -webkit-background-clip: text;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#brand-container{
+  display: flex;
+}
+
+#brand-container a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+main h1 {
+  text-shadow: 5px 5px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+ol > li,
+ul > li {
+  color: aliceblue;
+  position: relative;
+  right: 100px;
+}
+ol > li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  font-weight: bold;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
+ul svg {
+  margin: 10px;
+  color: aliceblue;
+  height: 25px;
+  width: 25px;
+}
+
+ul svg:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 3px black;
+}
+
+nav a,
+.text-center a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#footer-container {
+  border: none;
+  background-image: linear-gradient(transparent, blue);
+  height: 230px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footer-container ul {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* register page stylings */
+
+#register-container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/236x/63/cd/9e/63cd9e3fd6b8fd5c14c82d605a422d35.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form {
+  height: 580px;
+  width: 550px;
+  border-radius: 10px 50px;
+  box-shadow: 5px 5px 5px black;
+  padding: 40px 60px;
+  background-image: url("https://i.pinimg.com/736x/d6/20/33/d62033ee49601c7b4b7d886b3d09dfe9.jpg");
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#register-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 3px 3px 3px aliceblue;
+}
+#register-container label {
+  font-weight: bold;
+  color: aliceblue;
+  font-style: italic;
+}
+#register-container label::after {
+  content: ":";
+}
+
+/* home page stylings */
+
+#welcome-heading {
+  margin: 20px 0px;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration-line: underline;
+  color: transparent;
+  background-image: linear-gradient(45deg, red, green);
+  -webkit-background-clip: text;
+}
+
+/* add products stylings */
+
+.form-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://fnh.ma//uploads/actualites/675adddace33b_e-commerce.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container form{
+      height: 650px;
+    box-shadow: 5px 5px 5px aliceblue;
+    background: none;
+    backdrop-filter: blur(20px);
+    
+}
+
+.form-container form h1{
+  
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-style: italic;
+}
+.form-container form h1::first-letter{
+    font-size: 90px;
+}
+
+.form-container label{
+    font-weight: bold;
+    font-style: italic;
+    color: aliceblue;
+}
+.form-container label::after{
+    content: ":";
+}
+
+
+#product-container .card{
+  background-color: rgb(234, 229, 229);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#product-container .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+#product-container .btn{
+  padding: 10px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+/* update product page stylings */
+
+.update-main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.updateForm-container form{
+  background:aliceblue ;
+}
+.updateForm-container form{
+  margin-left: 10px !important;
+}
